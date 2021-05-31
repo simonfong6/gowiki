@@ -1,0 +1,16 @@
+# Buildkite
+.buildkite
+
+# Docker
+docker
+.dockerignore
+
+# Kubernetes
+kubernetes
+
+# Git
+.gitignore
+
+# Repository
+LICENSE
+README.md
