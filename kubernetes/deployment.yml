@@ -1,0 +1,26 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: wiki-go
+spec:
+  selector:
+    matchLabels:
+      app: wiki-go
+      tier: backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: wiki-go
+        tier: backend
+    spec:
+      containers:
+        - name: wiki-go
+          image: simonfong6/wiki-go:0.0.1
+          ports:
+            - containerPort: 9292
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
