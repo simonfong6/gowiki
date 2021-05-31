@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  wiki-go:
+    container_name: wiki-go
+    image: simonfong6/wiki-go:0.0.1
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - 3171:3171
+            
+networks:
+  default:
+    name: wiki-go
