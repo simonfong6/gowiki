@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: docker/Dockerfile
     ports:
-      - 3171:3171
+      - 8000:8000
             
 networks:
   default:

@@ -8,8 +8,8 @@ metadata:
 spec:
   type: LoadBalancer
   ports:
-    - port: 9292
-      targetPort: 9292
+    - port: 3171
+      targetPort: 8000
   # Replace with the IP of your minikube node / master node
   externalIPs:
     - 192.168.64.2
