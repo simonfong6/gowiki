@@ -18,7 +18,7 @@ spec:
         - name: wiki-go
           image: simonfong6/wiki-go:0.0.1
           ports:
-            - containerPort: 9292
+            - containerPort: 8000
   strategy:
     type: RollingUpdate
     rollingUpdate:
